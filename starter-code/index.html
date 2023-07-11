@@ -3,27 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Body Mass Index Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Body Mass Index Calculator</title>
 </head>
 <body>
+  <main class="p-1 grid place-items-center">
+    <div class="wrapper text-center">
+      <h1 class="text-5xl text-center font-semibold">Body Mass Index Calculator</h1>
+      <p class="text-secondary-grey">
+        Better understand your weight in relation to your height using our
+        body mass index (BM) calculator. While BMI is not the sole determinant
+        of a healthy weight, it offers a valuable starting point to evaluate
+        your overall health and well-being.
+      </p>
+    </div>
+    <div>
+      <h2 class="text-2xl font-semibold">Enter your details below</h2>
+      <div class="weight-wrapper grid grid-cols-2 grid-rows-4 place-items-center gap-3">
+        <div class="metric-wrapper">
+          <input type="radio" name="weight-measurement" id="metric">
+          <label class="font-semibold" for="radio">Metric</label>
+        </div>
+        <div class="imperial-wrapper">
+          <input type="radio" name="weight-measurement" id="imperial">
+          <label class="font-semibold" for="imperial">Imperial</label>
+        </div>
+        <div class="height-wrapper col-span-2">
+          <label class="text-primary-gunmetal block" for="height">Height</label>
+          <input class="border border-solid border-secondary-grey rounded-2xl w-1/2" type="text" name="height" id="height">
+          <input class="border border-solid border-secondary-grey rounded-2xl w-1/2" type="text" name="height" id="height">
+        </div>
+        <div class="weight-wrapper col-span-2">
+          <label class="text-primary-gunmetal block" for="weight">Weight</label>
+          <input class="border border-solid border-secondary-grey rounded-2xl w-1/2" type="text" name="weight" id="weight">
+          <input class="border border-solid border-secondary-grey rounded-2xl w-1/2" type="text" name="weight" id="weight">
+        </div>
+      </div>
+    </div>
+  </main>
 
-  Body Mass Index Calculator
-
-  Better understand your weight in relation to your height using our 
-  body mass index (BM) calculator. While BMI is not the sole determinant 
-  of a healthy weight, it offers a valuable starting point to evaluate 
-  your overall health and well-being.
-
-  Enter your details below
-
-  Metric
-  Imperial
-
-  Height
-  Weight
 
   Your BMI is...
 
